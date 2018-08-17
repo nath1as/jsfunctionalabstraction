@@ -1,7 +1,5 @@
 function palindromes(string) {
-  return substrings(string).filter(function (word) {
-    return palindrome(word);
-  });
+  return substrings(string).filter(palindrome);
 }
 
 function palindrome(string) {
